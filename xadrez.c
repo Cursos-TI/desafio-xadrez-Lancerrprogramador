@@ -21,12 +21,12 @@ int main() {
     }
 
     // Implementação de Movimentação da Torre
-    
+    printf("\n");
     for(int i = 0;i < 5; i++){
         printf("torre\n");
         printf("Direita\n"); //Imprime a direção do movimento 
     }
-   
+   printf("\n");
     // Implementação de Movimentação da Rainha
    
     int i = 1;
@@ -35,7 +35,7 @@ int main() {
         printf("Rainha, Esquerda\n"); // imprime a direção da rainha.
         i++;
     } while (i <= 8); 
-    
+    printf("\n");
     //incrementando o cavalo
     int movimentocavalo =1; //flag para o movimento em L
    printf("cavalo\n");
