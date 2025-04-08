@@ -5,14 +5,37 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 // teste Jonny Lima
+void movertorre(int casas){//movimetos da torre
+    if (casas > 0){
+        printf("direita\n");
+        movertorre(casas - 1);
+    }
+}
 
+void moverbispo(int casas){//movimentos do bispo
+    if(casas>0){
+        printf("cima,esquerda\n");
+        moverbispo(casas-1);
+    }
+}
+
+void moverrainha(int casas){//movimetos da rainha
+    if(casas>0){
+        printf("esquerda\n");
+        moverrainha(casas-1);
+    }
+}
 
 int main() {
-    // Nível Novato - Movimentação das Peças
+    moverbispo(5);
+   printf("\n");
     
 
     // Implementação de Movimentação do Bispo
-    
+    movertorre(5);
+    printf("\n");
+   moverrainha(8);
+   printf("\n");
     int b = 1;
     while (b <= 6) {
         printf("Bispo\n");
