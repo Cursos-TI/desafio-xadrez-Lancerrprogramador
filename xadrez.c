@@ -23,6 +23,7 @@ int main() {
     // Implementação de Movimentação da Torre
     
     for(int i = 0;i < 5; i++){
+        printf("torre\n");
         printf("Direita\n"); //Imprime a direção do movimento 
     }
    
@@ -34,6 +35,17 @@ int main() {
         printf("Rainha, Esquerda\n"); // imprime a direção da rainha.
         i++;
     } while (i <= 8); 
+    
+    //incrementando o cavalo
+    int movimentocavalo =1; //flag para o movimento em L
+   printf("cavalo\n");
+    while (movimentocavalo--){
+        for(int i = 0; i<=1;i++){
+            printf("cima\n");//impreme cima duas vezes
+        }
+        printf("direita\n");//impreme direita uma vez
+    }
+  
     
 
 
